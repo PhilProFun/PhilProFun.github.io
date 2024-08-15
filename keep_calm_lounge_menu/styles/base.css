@@ -2,7 +2,7 @@
 body {
     background-color: #121212;
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Подобранный шрифт */
     margin: 0;
     padding: 0;
 }
@@ -23,14 +23,12 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-size: 1em;
-    transition: background-color 0.3s, transform 0.3s;
     width: 90%;
     max-width: 300px;
 }
 
 button:hover {
     background-color: #333333;
-    transform: scale(1.05);
 }
 
 /* Стили для кнопки Wi-Fi */
@@ -85,14 +83,12 @@ button:hover {
     cursor: pointer;
     border-radius: 5px;
     font-size: 1em;
-    transition: background-color 0.3s, transform 0.3s;
     width: 90%;
     max-width: 300px;
 }
 
 #copyBtn:hover {
     background-color: #45a049;
-    transform: scale(1.05);
 }
 
 /* Стили для текста про тайм или фикс */
@@ -112,7 +108,7 @@ button:hover {
 
 .menuTable th, .menuTable td {
     border: 1px solid #333333;
-    padding: 5px;
+    padding: 10px; /* Увеличен размер padding для улучшения читабельности */
     text-align: center;
 }
 
@@ -136,14 +132,14 @@ button:hover {
 }
 
 .menuTable li {
-    font-size: 0.8em;
+    font-size: 0.9em; /* Увеличен размер шрифта для улучшения читабельности */
     margin-bottom: 5px;
 }
 
 /* Адаптивные стили */
 @media (max-width: 600px) {
     .menuTable th, .menuTable td {
-        padding: 3px;
+        padding: 5px; /* Увеличен размер padding для мобильных устройств */
     }
 
     button {

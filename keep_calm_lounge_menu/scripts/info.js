@@ -22,7 +22,6 @@ async function populateInfo(mode) {
     }
     container.appendChild(infoText);
 }
-
 function createTable() {
     let table = document.createElement('table');
     table.classList.add('menuTable');
@@ -49,6 +48,16 @@ function createTable() {
     table.appendChild(tbody);
     
     container.appendChild(table);
+}
+
+function addCategorySeparator(tableBody, category) {
+    let row = document.createElement('tr');
+    let cell = document.createElement('th');
+    cell.colSpan = 3;
+    cell.classList.add('categorySeparator');
+    cell.textContent = category;
+    row.appendChild(cell);
+    tableBody.appendChild(row);
 }
 
 function addItemToTable(item, tableBody) {
@@ -80,17 +89,47 @@ function addItemToTable(item, tableBody) {
     tableBody.appendChild(row);
 }
 
+let separators = {
+    "non_alcohol": "Безалкогольное",
+    "alcohol": "Алкогольное",
+    "hookahs": "Кальяны",
+    "food": "Перекус"
+}
+
 async function populateTable(mode) {
     let response = await fetch('data/prices.json');
     let data = await response.json();
 
     let tableBody = document.querySelector('.menuTable').getElementsByTagName("tbody")[0];
 
+    let combinedNonAlcohol = [...data.general_items.non_alcohol];
+    
     if (mode === 'time') {
-        data.time_items.forEach(item => addItemToTable(item, tableBody));
+        combinedNonAlcohol.unshift(...data.time_items.non_alcohol);
+        Object.keys(data.time_items).forEach(category => {
+            if (category !== 'non_alcohol') {
+                addCategorySeparator(tableBody, separators[category]);
+                data.time_items[category].forEach(item => addItemToTable(item, tableBody));
+            }
+        });
     }
-    else if (mode === 'fix') {
-        data.fix_items.forEach(item => addItemToTable(item, tableBody));
-    };
-    data.general_items.forEach(item => addItemToTable(item, tableBody));
+    if (mode === 'fix') {
+        combinedNonAlcohol.unshift(...data.fix_items.non_alcohol);
+        Object.keys(data.fix_items).forEach(category => {
+            if (category !== 'non_alcohol') {
+                addCategorySeparator(tableBody, separators[category]);
+                data.fix_items[category].forEach(item => addItemToTable(item, tableBody));
+            }
+        });
+    }
+
+    addCategorySeparator(tableBody, separators['non_alcohol']);
+    combinedNonAlcohol.forEach(item => addItemToTable(item, tableBody));
+
+    Object.keys(data.general_items).forEach(category => {
+        if (category !== 'non_alcohol') {
+            addCategorySeparator(tableBody, separators[category]);
+            data.general_items[category].forEach(item => addItemToTable(item, tableBody));
+        }
+    });
 }
