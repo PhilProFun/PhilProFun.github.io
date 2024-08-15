@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Информация о режимах</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/popup.css">
+    <script src="scripts/info.js" defer></script>
+    <script src="scripts/popup.js" defer></script>
 </head>
 
 <body>
+    <button id="showPopupBtn">Wi-Fi</button>
+    <div id="overlay" class="overlay"></div>
+    <div id="popup" class="popup">
+        <p id="popupText">Сеть: Keepcalmspb</p>
+        <button id="copyBtn">Копировать пароль</button>
+    </div>
     <div class="container">
-        <button class="info-button" onclick="showInfo('time')">Time Cafe</button>
-        <button class="info-button" onclick="showInfo('fix')">Fix</button>
+        <button class="info-button" onclick="showInfo('time')">Тайм</button>
+        <button class="info-button" onclick="showInfo('fix')">Фикс</button>
     </div>
 </body>
 
