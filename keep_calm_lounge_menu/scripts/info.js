@@ -26,24 +26,6 @@ function createTable() {
     let table = document.createElement('table');
     table.classList.add('menuTable');
     
-    let thead = document.createElement('thead');
-    let tr = document.createElement('tr');
-    
-    let th1 = document.createElement('th');
-    th1.textContent = 'Наименование';
-    tr.appendChild(th1);
-    
-    let th2 = document.createElement('th');
-    th2.textContent = 'Стоимость';
-    tr.appendChild(th2);
-    
-    let th3 = document.createElement('th');
-    th3.textContent = 'Дополнительно';
-    tr.appendChild(th3);
-    
-    thead.appendChild(tr);
-    table.appendChild(thead);
-    
     let tbody = document.createElement('tbody');
     table.appendChild(tbody);
     
