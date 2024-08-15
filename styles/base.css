@@ -11,18 +11,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 button {
     background-color: #1f1f1f;
     color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 15px;
     margin: 10px;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 1em;
     transition: background-color 0.3s, transform 0.3s;
+    width: 90%;
+    max-width: 300px;
 }
 
 button:hover {
@@ -35,6 +38,10 @@ button:hover {
     position: absolute;
     top: 10px;
     right: 10px;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    font-size: 0.9em;
 }
 
 /* Стили для попапа */
@@ -58,10 +65,12 @@ button:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     background: #1f1f1f;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 15px;
+    border-radius: 5px;
     display: none;
     text-align: center;
+    width: 80%;
+    max-width: 300px;
 }
 
 .popup.active {
@@ -72,10 +81,13 @@ button:hover {
     background-color: #4caf50;
     color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 15px;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 1em;
     transition: background-color 0.3s, transform 0.3s;
+    width: 90%;
+    max-width: 300px;
 }
 
 #copyBtn:hover {
@@ -86,21 +98,21 @@ button:hover {
 /* Стили для текста про тайм или фикс */
 #info {
     text-align: center;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 /* Стили для таблицы */
 .menuTable {
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
 }
 
 .menuTable th, .menuTable td {
     border: 1px solid #333333;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -117,23 +129,25 @@ button:hover {
 }
 
 .menuTable ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
     margin: 10px 0;
+    text-align: left;
 }
 
 .menuTable li {
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-bottom: 5px;
 }
 
 /* Адаптивные стили */
 @media (max-width: 600px) {
     .menuTable th, .menuTable td {
-        padding: 5px;
+        padding: 3px;
     }
 
     button {
-        padding: 5px 10px;
+        padding: 10px;
+        font-size: 0.9em;
     }
 }
