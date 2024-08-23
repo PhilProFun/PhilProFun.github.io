@@ -54,7 +54,6 @@ buttonsList["wlanHeader"].addEventListener('click', () => {
 })
 buttonsList["copyPassword"].addEventListener('click', () => {
     navigator.clipboard.writeText(wlanInfo["wlanPassword"]);
-    alert('Пароль скопирован!');
 })
 
 const categoryNames = {
