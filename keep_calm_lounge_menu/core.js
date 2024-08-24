@@ -1,6 +1,6 @@
 const wlanInfo = {
     "wlanName": "Keepcalmspb",
-    "wlanPassword": "hyhmg4Fz"
+    "wlanPassword": "len12345"
 };
 
 const buttonsList = {
