@@ -1,5 +1,5 @@
 const wlanInfo = {
-    "wlanName": "WLAN_NAME_5G",
+    "wlanName": "Keepcalmspb",
     "wlanPassword": "hyhmg4Fz"
 };
 
