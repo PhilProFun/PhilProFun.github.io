@@ -151,7 +151,7 @@ class MenuGenerator {
         
         const price = document.createElement('p');
         price.classList.add('list-element__price');
-        price.innerText = item.price || "бесплатно";
+        price.innerText = item.price;
 
         listElement.appendChild(price);
 
