@@ -149,13 +149,11 @@ class MenuGenerator {
         
         listElement.appendChild(contentDiv);
         
-        if (item.price != 0) {
-            const price = document.createElement('p');
-            price.classList.add('list-element__price');
-            price.innerText= item.price;
+        const price = document.createElement('p');
+        price.classList.add('list-element__price');
+        price.innerText = item.price || "бесплатно";
 
-            listElement.appendChild(price);
-        }
+        listElement.appendChild(price);
 
         return listElement;
     }
