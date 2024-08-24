@@ -61,6 +61,7 @@ const categoryNames = {
     "alcohol": "Алкогольное",
     "hookahs": "Кальяны",
     "food": "Перекус",
+    "special": "Дополнительно"
 };
 const data = {
     "prices": "./data/prices.json",
