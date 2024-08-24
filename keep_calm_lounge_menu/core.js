@@ -110,7 +110,7 @@ class MenuGenerator {
         if (!items || items.length === 0) return;
 
         const categoryTitle = document.createElement('h2');
-        categoryTitle.innerText= categoryNames[title];
+        categoryTitle.innerText = categoryNames[title];
 
         const categoryContainer = document.createElement('div');
         categoryContainer.classList.add('category', 'rounder');
@@ -145,14 +145,14 @@ class MenuGenerator {
 
         contentDiv.appendChild(label);
         contentDiv.appendChild(discDiv);
-
-        const price = document.createElement('p');
-        price.classList.add('list-element__price');
-        price.innerText= item.price;
-
+        
         listElement.appendChild(contentDiv);
-
+        
         if (item.price != 0) {
+            const price = document.createElement('p');
+            price.classList.add('list-element__price');
+            price.innerText= item.price;
+
             listElement.appendChild(price);
         }
 
