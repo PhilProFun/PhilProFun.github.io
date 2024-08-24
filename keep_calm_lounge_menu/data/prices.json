@@ -21,6 +21,21 @@
                     "уточните вкусы"
                 ],
                 "price": 250
+            },
+            {
+                "name": "Сэндвич",
+                "additionals": [
+                    "американский, итальянский",
+                    "с тунцом, пепперони"
+                ],
+                "price": 350
+            },
+            {
+                "name": "Ролл",
+                "additionals": [
+                    "цезарь, медово-горчичный"
+                ],
+                "price": 350
             }
         ],
         "non_alcohol": [
@@ -97,8 +112,7 @@
                 "additionals": [
                     "Black Burn, Must Have, Darkside",
                     "Overdose, Duft",
-                    "Nаш, Hooligan",
-                    "самое популярное"
+                    "Nаш, Hooligan"
                 ],
                 "price": 450
             },
