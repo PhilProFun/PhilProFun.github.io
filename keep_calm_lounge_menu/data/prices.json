@@ -75,7 +75,8 @@
             {
                 "name": "Сидр",
                 "additionals": [
-                    "Hoegaarden, Chester's"
+                    "Hoegaarden",
+                    "Chester's"
                 ],
                 "price": 200
             },
@@ -91,7 +92,9 @@
             {
                 "name": "Пиво",
                 "additionals": [
-                    "светлое, тёмное, нефильтрованное"
+                    "светлое",
+                    "тёмное",
+                    "нефильтрованное"
                 ],
                 "price": 250
             },
@@ -109,25 +112,33 @@
             {
                 "name": "Базовый кальян",
                 "additionals": [
-                    "Adalya, IZZI Bro, Chabacco",
-                    "не крепкий или бестабачный"
+                    "не крепкий или бестабачный",
+                    "Adalya",
+                    "IZZI Bro",
+                    "Chabacco"
                 ],
                 "price": 0
             },
             {
                 "name": "Премиальный кальян",
                 "additionals": [
-                    "Black Burn, Must Have, Darkside",
-                    "Overdose, Duft",
-                    "Nаш, Hooligan"
+                    "Black Burn",
+                    "Must Have",
+                    "Darkside",
+                    "Overdose",
+                    "Duft",
+                    "Nаш",
+                    "Hooligan"
                 ],
                 "price": 450
             },
             {
                 "name": "Кальян на крепком табаке",
                 "additionals": [
-                    "Bonche, Trofimoff's",
-                    "Tangiers, Everest"
+                    "Bonche",
+                    "Trofimoff's",
+                    "Tangiers",
+                    "Everest"
                 ],
                 "price": 600
             }
@@ -143,31 +154,27 @@
         ]
     },
     "fix_items": {
-        "non_alcohol": [
-            {
-                "name": "Чайник с чаем и печеньки",
-                "additionals": [
-                    "уточните сорта"
-                ],
-                "price": 350
-            }
-        ],
         "hookahs": [
             {
                 "name": "Премиальный кальян",
                 "additionals": [
-                    "Black Burn, Must Have, Darkside",
-                    "Overdose, Duft",
-                    "Nаш, Hooligan",
-                    "самое популярное"
+                    "Black Burn",
+                    "Must Have",
+                    "Darkside",
+                    "Overdose",
+                    "Duft",
+                    "Nаш",
+                    "Hooligan",
                 ],
                 "price": 1300
             },
             {
                 "name": "Кальян на крепком табаке",
                 "additionals": [
-                    "Bonche, Trofimoff's",
-                    "Tangiers, Everest"
+                    "Bonche",
+                    "Trofimoff's",
+                    "Tangiers",
+                    "Everest"
                 ],
                 "price": 1600
             },
