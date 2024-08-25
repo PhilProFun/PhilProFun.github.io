@@ -30,6 +30,9 @@ body {
 html, body {
     overflow: hidden !important;
 }
+.lounge-title {
+    text-align: center;
+}
 .prototype-screen {
     width: 100%;
     height: 100%;
