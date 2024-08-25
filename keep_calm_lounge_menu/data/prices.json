@@ -64,6 +64,18 @@
                     "без сахара"
                 ],
                 "price": 200
+            },
+            {
+                "name": "Aziano",
+                "additionals": [
+                    "арбуз",
+                    "клубника",
+                    "малина",
+                    "мохито",
+                    "сладкий напиток без сахара"
+                ],
+                "price": 150,
+                "popular": true
             }
         ],
         "alcohol": [
@@ -107,10 +119,10 @@
             {
                 "name": "Базовый кальян",
                 "additionals": [
-                    "не крепкий или бестабачный",
                     "Adalya",
                     "IZZI Bro",
-                    "Chabacco"
+                    "Chabacco",
+                    "не крепкий или бестабачный",
                 ],
                 "price": 0
             },
@@ -125,7 +137,8 @@
                     "Duft",
                     "Nаш"
                 ],
-                "price": 450
+                "price": 450,
+                "popular": true
             },
             {
                 "name": "Кальян на крепком табаке",
@@ -144,7 +157,8 @@
                 "additionals": [
                     "раз в час"
                 ],
-                "price": 0
+                "price": 0,
+                "popular": true
             }
         ]
     },
@@ -157,19 +171,20 @@
                     "Must Have",
                     "Darkside",
                     "Overdose",
+                    "Hooligan",
                     "Duft",
-                    "Nаш",
-                    "Hooligan"
+                    "Nаш"
                 ],
-                "price": 1300
+                "price": 1300,
+                "popular": true
             },
             {
                 "name": "Кальян на крепком табаке",
                 "additionals": [
                     "Bonche",
-                    "Trofimoff's",
+                    "Everest",
                     "Tangiers",
-                    "Everest"
+                    "Trofimoff's"
                 ],
                 "price": 1600
             },
@@ -179,7 +194,8 @@
                     "тот же или новый табак",
                     "при крепком табаке +100"
                 ],
-                "price": 700
+                "price": 700,
+                "popular": true
             }
         ]
     }
