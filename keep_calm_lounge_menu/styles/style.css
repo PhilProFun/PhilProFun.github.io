@@ -30,7 +30,7 @@ body {
 html, body {
     overflow: hidden !important;
 }
-.lounge-title {
+#lounge-title {
     text-align: center;
 }
 .prototype-screen {
