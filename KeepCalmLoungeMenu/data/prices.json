@@ -141,6 +141,7 @@
                     "Darkside",
                     "Overdose",
                     "Hooligan",
+                    "Starline",
                     "Duft",
                     "Nаш"
                 ],
@@ -179,10 +180,19 @@
                     "Darkside",
                     "Overdose",
                     "Hooligan",
+                    "Starline",
                     "Duft",
                     "Nаш"
                 ],
                 "price": 1300,
+                "popular": true
+            },
+            {
+                "name": "Перезабивка кальяна",
+                "additionals": [
+                    "тот же или новый табак"
+                ],
+                "price": 700,
                 "popular": true
             },
             {
@@ -194,14 +204,6 @@
                     "Trofimoff's"
                 ],
                 "price": 1600
-            },
-            {
-                "name": "Перезабивка премиального кальяна",
-                "additionals": [
-                    "тот же или новый табак"
-                ],
-                "price": 700,
-                "popular": true
             },
             {
                 "name": "Перезабивка крепкого кальяна",
