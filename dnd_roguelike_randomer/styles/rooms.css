@@ -6,9 +6,21 @@ body {
     padding: 0;
 }
 
+.room-name-container {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #713b2756;
+    color: #fff;
+}
+
+.room-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 .back-button-container {
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 .back-button {

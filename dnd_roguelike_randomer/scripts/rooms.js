@@ -1,7 +1,7 @@
 function renderCurrentRoom(e) {
     document.body.innerHTML = '';
 
-    renderBackButton();
+    renderRoomName(e.target.textContent);
 
     let mainInfoElement = document.createElement('div');
     mainInfoElement.className = 'main-info-container';
@@ -30,6 +30,7 @@ function renderCurrentRoom(e) {
         case '3':
             renderReward();
             renderTest();
+            break;
         // ниже кастомные комнаты биомов:
         case '4':
             renderTest();
@@ -41,7 +42,20 @@ function renderCurrentRoom(e) {
         default:
             break;
     }
+
+    renderBackButton();
 };
+
+function renderRoomName(roomName) {
+    let roomNameContainer = document.createElement('div');
+    roomNameContainer.className = 'room-name-container';
+    document.body.appendChild(roomNameContainer);
+
+    let roomNameElement = document.createElement('div');
+    roomNameElement.className = 'room-name';
+    roomNameElement.innerText = `Комната: ${roomName}`;
+    roomNameContainer.appendChild(roomNameElement);
+}
 
 function renderBackButton() {
     let backButtonContainer = document.createElement('div');

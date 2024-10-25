@@ -1,10 +1,10 @@
 function renderBiomes() {
-    const biomeList = document.createElement('div');
+    let biomeList = document.createElement('div');
     biomeList.id = 'biome-list';
     biomeList.innerHTML = '';
     
     biomes.forEach(biome => {
-        const button = document.createElement('button');
+        let button = document.createElement('button');
         button.textContent = biome;
         button.className = 'biome-button';
         button.addEventListener('click', () => {

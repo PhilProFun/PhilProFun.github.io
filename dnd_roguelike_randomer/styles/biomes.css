@@ -56,7 +56,6 @@ body {
     }
 }
 
-/* Styles for biome buttons */
 .biome-button {
     background-color: #7d3a218d;
     border: 1px solid #fff;
@@ -65,7 +64,8 @@ body {
     padding: 15px 20px;
     margin: 10px;
     font-size: 18px;
-    width: 45%;
+    width: calc(50% - 30px);
+    /* Subtracting margin */
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
@@ -82,6 +82,6 @@ body {
 
 @media (max-width: 600px) {
     .biome-button {
-        width: 90%;
+        width: calc(100% - 20px);
     }
 }
