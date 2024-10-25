@@ -64,8 +64,7 @@ body {
     padding: 15px 20px;
     margin: 10px;
     font-size: 18px;
-    width: calc(50% - 30px);
-    /* Subtracting margin */
+    width: calc(50% - 0px);
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
@@ -73,7 +72,7 @@ body {
 
 .biome-button:hover {
     background-color: #71392565;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .biome-button:active {
