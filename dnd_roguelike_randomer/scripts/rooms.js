@@ -24,7 +24,7 @@ function renderCurrentRoom(e) {
             renderVillager();
             break;
         case '2':
-            renderItemsAmount();
+            renderItem();
             renderTest();
             break;
         case '3':
@@ -153,21 +153,21 @@ function renderVillager() {
     document.querySelector('.detail-info-container').appendChild(villagerElement);
 };
 
-function renderItemsAmount() {
-    let itemsAmountElement = document.createElement('div')
-    itemsAmountElement.className = 'block-container';
+function renderItem() {
+    let itemElement = document.createElement('div')
+    itemElement.className = 'block-container';
 
-    let itemsAmountTitle = document.createElement('div');
-    itemsAmountTitle.className = 'title';
-    itemsAmountTitle.innerText = 'Количество предметов'
-    itemsAmountElement.appendChild(itemsAmountTitle);
+    let itemTitle = document.createElement('div');
+    itemTitle.className = 'title';
+    itemTitle.innerText = 'Предмет'
+    itemElement.appendChild(itemTitle);
 
-    let itemsAmountInfo = document.createElement('div');
-    itemsAmountInfo.className = 'info';
-    itemsAmountInfo.innerText = rollD4();
-    itemsAmountElement.appendChild(itemsAmountInfo);
+    let itemInfo = document.createElement('div');
+    itemInfo.className = 'info';
+    itemInfo.innerText = randomChoice(items);
+    itemElement.appendChild(itemInfo);
 
-    document.querySelector(".detail-info-container").appendChild(itemsAmountElement);
+    document.querySelector(".detail-info-container").appendChild(itemElement);
 };
 
 function renderReward() {

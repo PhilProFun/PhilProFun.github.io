@@ -33,6 +33,11 @@ async function loadBiomeData() {
        .then(data => interiors = data)
        .catch(error => console.error('Error:', error));
 
+    await fetch(`./data/${currentBiome}/items.json`)
+       .then(response => response.json())
+       .then(data => items = data)
+       .catch(error => console.error('Error:', error));
+
     await fetch(`./data/${currentBiome}/villagers.json`)
        .then(response => response.json())
        .then(data => villagers = data)
